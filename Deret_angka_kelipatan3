@@ -1,0 +1,21 @@
+#include <iostream>
+#include <conio>
+
+int main(){
+ cout << "Program C++ Deret Angka" << endl;
+ cout << "=======================" << endl;
+ cout << endl;
+
+ int jumlah_deret, i;
+
+ cout << "Masukkan jumlah deret yang diinginkan: ";
+ cin >> jumlah_deret;
+ cout << endl;
+
+ for(i = 1; i <= jumlah_deret; i++){
+  cout << i*3 << " ";
+ }
+
+ getch();
+
+}
