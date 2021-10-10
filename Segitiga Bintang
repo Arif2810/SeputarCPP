@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iostream>
+#include <conio>
+#include <iostream>
+#include <conio>
+
+int main(){
+	cout << " Program C++ Segitiga Bintang " << endl;
+   cout << "==============================" << endl;
+   cout << endl;
+
+   int tinggi_segitiga, i, j;
+
+   cout << "Masukkan tinggi segitiga: ";
+   cin >> tinggi_segitiga;
+   cout << endl;
+
+   for(i = 1; i <= tinggi_segitiga; i++){
+   	for(j = 1; j <= i; j++){
+      	cout << " *";
+      }
+      cout << endl;
+   }
+
+   getch();
+
+
+}
