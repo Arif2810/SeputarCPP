@@ -1,0 +1,27 @@
+#include <iostream>
+#include <conio>
+
+int main(){
+	cout << " Program C++ Piramida Bintang " << endl;
+   cout << "==============================" << endl;
+   cout << endl;
+
+   int tinggi_piramid, i, j, k;
+
+   cout << "Masukkan tinggi piramid yang diinginkan: ";
+   cin >> tinggi_piramid;
+   cout << endl;
+
+   for(i = 1; i <= tinggi_piramid; i++){
+   	for(j = 1; j <= tinggi_piramid - i; j++){
+      	cout << " ";
+      }
+      for(k = 1; k <= i; k++){
+      	cout << " *";
+      }
+      cout << endl;
+   }
+   getch();
+
+
+}
