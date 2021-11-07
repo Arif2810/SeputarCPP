@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio>
+
+int main(){
+	cout << " Program C++ Persegi Angka " << endl;
+   cout << "===========================" << endl;
+   cout << endl;
+
+   int besar_persegi, i, j, k;
+
+   cout << "Input besar persegi: ";
+   cin >> besar_persegi;
+   cout << endl;
+
+   k = 0;
+   for(i = 1; i <= besar_persegi; i++){
+      for(j = 1; j <= besar_persegi; j++){
+      	k++;
+         cout << k << " ";
+      }
+   	cout << endl;
+   }
+
+   getch();
+}
