@@ -1,0 +1,36 @@
+#include <conio>
+#include <iostream>
+
+int main(){
+
+	cout << " Program C++ Mencari Nilai Terbesar " << endl;
+   cout << "====================================" << endl;
+   cout << endl;
+
+   int input[100], arr_count, i, max_num;
+
+   cout << "Input jumlah element array: ";
+   cin >> arr_count;
+   cout << endl;
+
+   cout << "Input " << arr_count << " angka (dipisah dengan enter)";
+   cout << endl;
+
+   // Menyimpan inputan
+   for(i = 0; i < arr_count; i++){
+   	cin >> input[i];
+   }
+
+   cout << endl;
+
+   max_num = input[0];
+   // Mencari nilai max
+   for(i = 0; i < arr_count; i++){
+   	if(input[i] > max_num){
+         max_num = input[i];
+      }
+   }
+
+   cout << "Angka terbesar adalah: " << max_num << endl;
+   getch();
+}
