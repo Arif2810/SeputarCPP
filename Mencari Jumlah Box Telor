@@ -1,0 +1,44 @@
+#include <conio>
+#include <iostream>
+
+#include <conio>
+#include <iostream>
+
+int main(){
+
+	cout << "Program Mencari Box Telor" << endl;
+   cout << "=========================" << endl;
+   cout << endl;
+
+   int jum_telor_perbox, jumlah_box, sisa, jumlah_telor;
+
+   jum_telor_perbox = 16;
+   jumlah_box = 0;
+   sisa = 0;
+
+   // Memasukkan jumlah telor
+   cout << "Jumlah telor: ";
+   cin >> jumlah_telor;
+   cout << endl;
+
+   // Jika jumlah telor <= jumlah telor per box
+   if(jumlah_telor <= jum_telor_perbox){
+   	jumlah_box = 1;
+   }
+
+   sisa = jumlah_telor % jum_telor_perbox;
+   // Jika sisa = 0
+   if(sisa == 0){
+   	jumlah_box = jumlah_telor / jum_telor_perbox;
+   }
+   else{
+   	jumlah_box = 1 + (jumlah_telor / jum_telor_perbox);
+   }
+
+   // Menampilkan jumlah box telor
+   cout << "Jumlah telor adalah: " << jumlah_box << " box";
+   cout << endl;
+
+   getch();
+
+}
