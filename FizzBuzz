@@ -1,0 +1,33 @@
+#include <conio>
+#include <iostream>
+
+int main(){
+	cout << "Program Fizz Buzz" << endl;
+   cout << "=================" << endl;
+   cout << endl;
+
+   int n, i;
+
+   cout << "Masukkan banyaknya angka yang diinginkan: ";
+   cin >> n;
+   cout << endl;
+
+   // Perulangan dari banyaknya angka yang dimasukkan
+   for(i = 1; i <= n; i++){
+   	// jika kelipatan 3 dan 5 tampilkan FizzBuzz
+      if(i % 3 == 0 && i % 5 == 0){
+      	cout << "FizzBuzz";
+      }
+      else if(i % 3 == 0){
+      	cout << "Fizz";
+      }
+      else if(i % 5 == 0){
+      	cout << "Buzz";
+      }
+      else{
+      	cout << i;
+      }
+      cout << endl;
+   }
+	getch();
+}
