@@ -1,0 +1,30 @@
+#include <iostream>
+#include <conio>
+
+// Membuat function
+float luasSegitiga(float alas, float tinggi){
+	return 0.5 * alas * tinggi;
+}
+
+int main(){
+
+	cout << "Program C++ Menghitung Luas Segitiga" << endl;
+   cout << "====================================" << endl;
+   cout << endl;
+
+   float a, t, luas;
+
+   cout << "Input alas segitiga: ";
+   cin >> a;
+   cout << "Input tinggi segitiga: ";
+   cin >> t;
+   cout << endl;
+
+   luas = luasSegitiga(a, t);
+
+   cout << "Luas segitiga = " << luas << endl;
+   cout << endl;
+
+   getch();
+
+}
