@@ -1,0 +1,22 @@
+#include <conio>
+#include <iostream>
+
+float luasLingkaran(float r){
+	return 3.14 * r * r;
+}
+
+int main(){
+
+	cout << " Program C++ Menghitung Luas Lingkaran (Function) " << endl;
+   cout << " ================================================ " << endl;
+   cout << endl;
+
+   float r;
+
+   cout << "Inputkan jari-jari lingkaran: ";
+   cin >> r;
+   cout << "Luas lingkaran = " << luasLingkaran(r) << endl;
+
+   getch();
+
+}
