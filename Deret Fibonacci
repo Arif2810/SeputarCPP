@@ -1,0 +1,36 @@
+#include <conio>                           
+#include <iostream>
+
+int main(){
+
+	cout << " Program C++ Deret Fibonacci " << endl;
+   cout << " ============================" << endl;
+   cout << endl;
+
+   int n,
+   	angka1 = 0,
+      angka2 = 1,
+      angka_selanjutnya;
+
+   cout << "Deret angka yang diinginkan : ";
+   cin >> n;
+
+   for(int i = 1; i <= n; i++){
+   	if(i == 1){
+      	cout << angka1 << " ";
+         continue;
+      }
+      if(i == 2){
+      	cout << angka2 << " ";
+         continue;
+      }
+
+      angka_selanjutnya = angka1 + angka2;
+      angka1 = angka2;
+      angka2 = angka_selanjutnya;
+
+      cout << angka_selanjutnya << " ";
+   }
+
+   getch();
+}
