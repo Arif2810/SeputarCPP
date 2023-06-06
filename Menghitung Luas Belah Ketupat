@@ -1,0 +1,21 @@
+#include <conio>
+#include <iostream>
+
+int main(){
+	cout << "## Program C++ Menghitung Luas Belah Ketupat ## " << endl;
+   cout << "================================================" << endl;
+   cout << endl;
+
+   float diagonal1, diagonal2, luas;
+
+   cout << "Input diagonal 1 : ";
+   cin >> diagonal1;
+   cout << "Input diagonal 2 : ";
+   cin >> diagonal2;
+
+   luas = 0.5 * diagonal1 * diagonal2;
+
+   cout << "Luas belah ketupat = " << luas << endl;
+
+	getch();
+}
